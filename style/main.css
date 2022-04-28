@@ -1,82 +1,154 @@
-:root{
-    --vermelho:#E50914;
-    --preta:#141414;
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
 }
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 /*elementos base*/
-body{
-   background: var(--preta);
-   font-family: 'Arial', Times, serif;
-   color:white;
+body {
+
+    font-family: 'Arial', Times, serif;
+    color: white;
 }
 
+.base {
+    background-color: #141414;
+}
 
-header .container{
-    display:flex;
+header {
+    background-color: var(--preta);
+}
+
+header {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
-header .logo{
+header .navegacao .logo {
     margin-left: 5px;
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
-    font-size:40px;
+    font-size: 40px;
 }
 
-header nav a{
-    text-decoration:none;
-    color:#AAA;
+header nav a {
+    text-decoration: none;
+    color: #AAA;
     margin-right: 10px;
 }
 
 
-header nav a:hover{
-    color:#fff;
+header nav a:hover {
+    color: #fff;
+}
+
+.navegacao {
+    background-color: var(--preta);
+}
+
+.navegacao ul li a {
+    color: #fff;
+}
+
+.botao-navegacao {
+    color: #fff;
+}
+
+#destaque .modal-content {
+    background-color: var(--preta);
+    color: #fff;
+
+}
+
+#destaque-capa {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)),
+        url('../img/capa-house.jpg');
+    background-position: center;
+    background-size: cover;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+#destaque-capa .btn-close {
+    align-self: flex-start;
+}
+
+#destaque .episodios {
+    margin-top: 20px;
+}
+
+#destaque .episodios ol li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#destaque .acoes {
+    align-items: center;
+}
+
+
+#destaque .acoes a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#destaque .acoes a:hover {
+    border: 1px solid #AAA;
+    background-color: #AAA;
+    color: #fff;
 }
 
 /*filme principal*/
-.filme-principal{
-    font-size:16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-house.jpg');
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url('../img/capa-house.jpg');
 
-    height:400px;
-    background-size:cover;
- 
+    height: 400px;
+    background-size: cover;
+
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    color: #fff;
+    padding-bottom: 15%;
 }
 
 
-.filme-principal .descricao{
+.filme-principal .descricao {
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 3px black;
 }
 
 
-.filme-principal .titulo{
-    margin-top: 15%;
+.filme-principal .titulo {
+    margin-top: 20%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-shadow: 1px 1px 3px black;
 }
 
-.botao{
-    background-color: rgba(0,0,0,.50);
-    border:none;
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
     color: white;
 
-    padding:15px 30px;
+    padding: 15px 30px;
     margin-right: 15px;
     font-size: 12px;
 
@@ -84,51 +156,66 @@ header nav a:hover{
     transition: .3s ease all;
 }
 
-.botao:hover{
-    background-color:white;
-    color:black;
+.botao:hover {
+    background-color: white;
+    color: black;
 }
 
-.botao i{
+.botao i {
     margin-right: 8px;
 }
 
+.botoes button {
+    width: 100%;
+    margin-top: 5px;
+}
 
-.container{
+.container {
     margin-left: 20px;
 }
 
-.filme-principal .container{
+.filme-principal .container {
     width: 70%;
 }
 
-.box-filme{
-    height: 100%;
-    width: 100%;
-    display: block;
-    cursor: pointer;
+
+#categorias {
+    background-color: var(--preta);
+    color: #fff;
+    padding-bottom: 20px;
+
+}
+
+#categorias h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
 }
 
 
-.carrosel-filmes{
-    margin-top:5px;
+
+#categorias .row .col {
+    margin-top: 20px;
+    padding: 10px 5px;
+
+
 }
 
 
 
+.categoria {
 
 
+    text-align: center;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.categoria a {
+    color: #fff;
+    text-decoration: none;
+    background-color: black;
+    padding: 15px 10px;
+    border-radius: 20px;
+}
