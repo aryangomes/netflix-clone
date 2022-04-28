@@ -75,13 +75,15 @@ header nav a:hover {
     background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)),
         url('../img/mini11.jpg');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     align-items: flex-end;
     flex-direction: row-reverse;
 }
 
 #destaque-capa .btn-close {
     align-self: flex-start;
+
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 #destaque .episodios {
